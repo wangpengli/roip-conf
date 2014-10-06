@@ -1,4 +1,3 @@
-_ = require("lodash")
 fs = require("fs")
 path = require("path")
 nconf = require("nconf")
@@ -9,7 +8,7 @@ class RoipConf
     process.argv.forEach (val, index)->
       console.log("ARGV", index + ': ' + val)
     config = nconf.get()
-    for key in _.keys(config)
+    for key of config
       if key.indexOf('_') isnt 0
         console.log key, "=", config[key]
 
