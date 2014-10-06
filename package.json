@@ -3,7 +3,7 @@
   "authors": [
     "OnCircle Inc. <developer@oncircle.com>"
   ],
-  "version": "0.0.3",
+  "version": "0.0.4",
   "private": false,
   "dependencies": {
     "jsonminify": "0.2.3",
@@ -11,6 +11,7 @@
     "nconf": "0.6.8",
     "roip-logger": "0.0.33"
   },
+  "main": "roip-conf.js",
   "devDependencies": {
     "grunt": "*",
     "grunt-cli": "*",
