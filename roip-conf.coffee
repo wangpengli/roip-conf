@@ -1,3 +1,4 @@
+_ = require("lodash")
 fs = require("fs")
 path = require("path")
 nconf = require("nconf")
