@@ -6,7 +6,7 @@
   "version": "0.0.1",
   "private": true,
   "dependencies": {
-    "jsonminify": "^0.2.3",
+    "jsonminify": "0.2.3",
     "lodash": "2.4.1",
     "nconf": "0.6.8",
     "roip-logger": "0.0.33"
