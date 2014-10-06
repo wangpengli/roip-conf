@@ -16,3 +16,8 @@ Command-line arguments (all optional):
 * -o (or --overrides): path to the overrides config file.
 
 Config files are parsed through JSON-minify, so you can use standard JavaScript comments in the JSON files.
+
+Usage:
+  var conf = require("roip-conf");
+  conf.init();
+  console.log(conf.get('MY-ENV-VAR'));
