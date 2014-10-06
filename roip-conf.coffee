@@ -52,4 +52,8 @@ class RoipConf
   get: (key)->
     return nconf.get(key)
 
+  set: (key, val)->
+    nconf.set(key, val)
+    return @
+
 module.exports = new RoipConf()
