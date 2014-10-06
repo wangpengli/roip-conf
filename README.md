@@ -23,3 +23,9 @@ Usage:
   conf.init();
   console.log(conf.get('MY-ENV-VAR'));
 ```
+
+API:
+* loadFile(method, configFile) - loads the specified config file.
+    * method - either 'defaults' or 'overrides'.   
+    * configFile - path to the config file.
+* init() - initialize config with command-line, environment, overrides, and defaults.
