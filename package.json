@@ -1,0 +1,33 @@
+{
+  "name": "roip-conf",
+  "authors": [
+    "OnCircle Inc. <developer@oncircle.com>"
+  ],
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "jsonminify": "^0.2.3",
+    "lodash": "2.4.1",
+    "nconf": "0.6.8",
+    "roip-logger": "0.0.33"
+  },
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-cli": "*",
+    "grunt-env": "*",
+    "grunt-contrib-coffee": "*",
+    "grunt-jasmine-node": "*",
+    "jasmine-node": "*",
+    "should": "4.0.4",
+    "supertest": "0.14.0",
+    "nock": "*"
+  },
+  "scripts": {
+    "test": "./node_modules/grunt-cli/bin/grunt test",
+    "install": "coffee -c roip-conf.coffee"
+  },
+  "readme": "README.md",
+  "engines": {
+    "node": ">=0.10.24"
+  }
+}
