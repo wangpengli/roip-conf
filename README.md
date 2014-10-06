@@ -29,3 +29,5 @@ API:
     * method - either 'defaults' or 'overrides'.   
     * configFile - path to the config file.
 * init() - initialize config with command-line, environment, overrides, and defaults.
+* get(key) - get a config value
+* set(key, value) - set a config value
