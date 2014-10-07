@@ -3,6 +3,8 @@ path = require("path")
 nconf = require("nconf")
 require("jsonminify")
 
+nconf.use('memory')
+
 class RoipConf
   dumpConfig = ->
     process.argv.forEach (val, index)->
