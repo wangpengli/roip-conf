@@ -3,7 +3,7 @@
   "authors": [
     "OnCircle Inc. <developer@oncircle.com>"
   ],
-  "version": "0.0.8",
+  "version": "0.0.9",
   "private": false,
   "repository": {
     "type": "git",
@@ -11,8 +11,7 @@
   },
   "dependencies": {
     "jsonminify": "0.2.3",
-    "nconf": "0.7.1",
-    "roip-logger": "0.0.33"
+    "nconf": "0.7.1"
   },
   "main": "roip-conf.js",
   "scripts": {
