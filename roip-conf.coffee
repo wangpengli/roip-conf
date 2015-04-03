@@ -2,11 +2,12 @@ fs = require("fs")
 path = require("path")
 nconf = require("nconf")
 require("jsonminify")
-
+cluster = require("cluster")
 nconf.use('memory')
 
 class RoipConf
   dumpConfig = ->
+    return if cluster.worker?.id > 1
     process.argv.forEach (val, index)->
       console.log("ARGV", index + ': ' + val)
     config = nconf.get()
