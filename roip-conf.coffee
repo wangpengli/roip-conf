@@ -7,7 +7,7 @@ nconf.use('memory')
 
 class RoipConf
   dumpConfig = ->
-    return if cluster.worker?.id > 1
+    return if cluster.worker
     process.argv.forEach (val, index)->
       console.log("ARGV", index + ': ' + val)
     config = nconf.get()
@@ -22,7 +22,7 @@ class RoipConf
       if fs.existsSync(configFile)
         config = null
         try
-          console.log "#{method} - loading config file: #{configFile}"
+          console.log "#{method} - loading config file: #{configFile}" unless cluster.worker
           config = JSON.parse(JSON.minify(fs.readFileSync(configFile, encoding: 'utf8')))
         catch err
           console.error "#{method} - error parsing config file:", configFile, err
