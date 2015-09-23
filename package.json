@@ -3,20 +3,21 @@
   "authors": [
     "OnCircle Inc. <developer@oncircle.com>"
   ],
-  "version": "0.0.11",
+  "version": "0.0.12",
   "private": false,
   "repository": {
     "type": "git",
     "url": "https://github.com/OnCircle/roip-conf.git"
   },
   "dependencies": {
+    "coffee-script": "^1.10.0",
     "jsonminify": "0.2.3",
     "nconf": "0.7.1"
   },
   "main": "roip-conf.js",
   "scripts": {
     "test": "./node_modules/grunt-cli/bin/grunt test",
-    "install": "coffee -c roip-conf.coffee"
+    "install": "./node_modules/coffee-script/bin/coffee -c roip-conf.coffee"
   },
   "readme": "README.md",
   "engines": {
