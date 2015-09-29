@@ -3,7 +3,7 @@
   "authors": [
     "OnCircle Inc. <developer@oncircle.com>"
   ],
-  "version": "0.0.16",
+  "version": "0.0.17",
   "private": false,
   "repository": {
     "type": "git",
@@ -19,7 +19,7 @@
   "main": "roip-conf.js",
   "scripts": {
     "test": "./node_modules/grunt-cli/bin/grunt test",
-    "prepublish": "coffee -c ."
+    "prepublish": "coffee -c *.coffee"
   },
   "readme": "README.md",
   "engines": {
