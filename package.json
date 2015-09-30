@@ -14,7 +14,12 @@
     "nconf": "0.7.1"
   },
   "devDependencies": {
-    "coffee-script": "latest"
+    "coffee-script": "latest",
+    "chai": "*",
+    "grunt": "*",
+    "grunt-contrib-coffee": "*",
+    "grunt-mocha-test": "*",
+    "should": "*"
   },
   "main": "roip-conf.js",
   "scripts": {
